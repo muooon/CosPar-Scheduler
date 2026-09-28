@@ -8,15 +8,15 @@ class CosPar(_LRScheduler):
     それ以外のサイクルは指定した最低値(min_lr_rate)までしか減衰させないリスタートスケジューラ
     デフォルトでは、中間サイクルを1/2(0.5) まで減衰させる(ユーザー指定で0.0～1.0に調整可)
     usage：
-    --lr_scheduler_type=scheduler.cos_par.CosPar --lr_scheduler_args "min_lr_rate=0.5"
+    --lr_scheduler_type=scheduler.cospar.CosPar --lr_scheduler_args "min_lr_rate=0.5"
     """
     def __init__(
         self, 
         optimizer, 
-        num_warmup_steps: int= 0,     # デフォルト値を設定
-        num_training_steps: int= 100,     # デフォルト値を設定
-        num_cycles: int = 3, 
-        min_lr_rate: float = 0.3,  # 最終サイクル以外での最低学習率の割合 (0.0 〜 1.0)
+        num_warmup_steps: int= 0,       # デフォルト値
+        num_training_steps: int= 100,   # デフォルト値
+        num_cycles: int = 3,            # サイクル回数
+        min_lr_rate: float = 0.3,       # 最終サイクル以外での最低学習率の割合 (0.0 〜 1.0)
         last_epoch: int = -1
     ):
         self.num_warmup_steps = num_warmup_steps
