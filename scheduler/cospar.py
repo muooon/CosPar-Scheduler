@@ -6,7 +6,7 @@ class CosPar(_LRScheduler):
     CosineAnnealingWarmPartialRestarts (CosPar) (260930) コスパ(日本語読み)
     最後のサイクルのみ通常のコサインカーブ(0まで減衰)、
     それ以外のサイクルは指定した最低値(min_lr_rate)までしか減衰させないリスタートスケジューラ
-    デフォルトでは、中間サイクルを1/2(0.5) まで減衰させる(ユーザー指定で0.0～1.0に調整可)
+    デフォルトでは、中間サイクルを1/3(0.3) まで減衰させる(ユーザー指定で0.0～1.0に調整可)
     usage：
     --lr_scheduler_type=scheduler.cospar.CosPar --lr_scheduler_args "min_lr_rate=0.5"
     """
