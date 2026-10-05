@@ -9,7 +9,8 @@ PyTorch向けのカスタム学習率スケジューラーです、
 
 readme：[English](README.md) | [日本語](README_JA.md)  
 
-<img width="800" height="400" alt="cospar" src="https://github.com/user-attachments/assets/1c609f34-9815-4347-98ad-e31773f49113" />
+<img width="800" height="400" alt="cospar-graph000" src="https://github.com/user-attachments/assets/5ead34db-6c21-4998-a9c0-cd5a466b559f" />
+
 
 主な特徴  
 
